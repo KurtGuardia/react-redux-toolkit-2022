@@ -10,7 +10,7 @@ import UserList from './components/UserList';
 
 function App() {
   return (
-    <React.Fragment className='App'>
+    <React.Fragment>
       <NavBar />
       <Routes>
         <Route path={'/'} element={<Home />} />
