@@ -1,10 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { EmployeeService } from '../../services/employeeService';
 
-const employees = EmployeeService.getAllEmployees();
-
 const initialState = {
-  employees: employees,
+  employees: EmployeeService.getAllEmployees(),
 };
 
 const employeesSlice = createSlice({

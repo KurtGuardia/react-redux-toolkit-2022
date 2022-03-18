@@ -39,34 +39,30 @@ const Employees = () => {
             </ul>
           </div>
           <div className='col-md-6'>
-            <div key='id'>
-              <div className='card my-2'>
-                <div className='card-body'>
-                  <ul className='list-group'>
-                    {staff.employees.map((employee) => {
-                      return (
-                        employee.isSelected && (
-                          <div className=' m-2' key={employee.id}>
-                            <li className='list-group-item'>
-                              Name:{' '}
-                              <span className='fw-bold'>{employee.name}</span>
-                            </li>
-                            <li className='list-group-item'>
-                              Username:{' '}
-                              <span className='fw-bold'>
-                                {employee.username}
-                              </span>
-                            </li>
-                            <li className='list-group-item'>
-                              Email:{' '}
-                              <span className='fw-bold'>{employee.email}</span>
-                            </li>
-                          </div>
-                        )
-                      );
-                    })}
-                  </ul>
-                </div>
+            <div className='card my-2'>
+              <div className='card-body'>
+                <ul className='list-group'>
+                  {staff.employees.map((employee) => {
+                    return (
+                      employee.isSelected && (
+                        <div className=' m-2' key={employee.id}>
+                          <li className='list-group-item'>
+                            Name:{' '}
+                            <span className='fw-bold'>{employee.name}</span>
+                          </li>
+                          <li className='list-group-item'>
+                            Username:{' '}
+                            <span className='fw-bold'>{employee.username}</span>
+                          </li>
+                          <li className='list-group-item'>
+                            Email:{' '}
+                            <span className='fw-bold'>{employee.email}</span>
+                          </li>
+                        </div>
+                      )
+                    );
+                  })}
+                </ul>
               </div>
             </div>
           </div>
